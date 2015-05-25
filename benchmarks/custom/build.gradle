@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.13.0'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenLocal()
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+    buildscript {
+        repositories {
+            jcenter()
+            mavenLocal()
+            mavenCentral()
+            maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        }
+    }
+    ext {
+        roboVMVersion = '1.2.0'
+        daggerVersion = '2.0'
+    }
+}

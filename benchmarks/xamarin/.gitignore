@@ -1,0 +1,25 @@
+# NuGet dependencies
+packages/
+.nuget/
+
+# Android module specifics 
+**/Resource.designer.cs
+
+# Shared files
+**/bin/
+**/obj/
+*_ReSharper.*/
+
+# Misc files
+*.user
+*.suo
+*.userprefs
+*.DS_Store
+*.swp
+
+# Gradle
+.gradle/
+build/
+
+# Migration
+.svn
